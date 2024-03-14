@@ -1,5 +1,7 @@
 package com.nt.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -28,5 +30,10 @@ public class IemployeeMs {
 		}
 		
 	}
-
+	@GetMapping("/allemp")
+   public ResponseEntity<List<Employee>> allemployees(){
+	   List<Employee> msg=Service.getallEmployess();
+	   return new ResponseEntity<List<Employee>>(msg, HttpStatus.OK);
+		
+   }
 }
