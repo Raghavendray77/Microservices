@@ -19,7 +19,7 @@ public class Employee implements Serializable{
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	@Column(name = "ID")
-	private Integer id;
+	private Integer Id;
 	@Column(name = "NAME")
 	@NonNull
 	private String name;

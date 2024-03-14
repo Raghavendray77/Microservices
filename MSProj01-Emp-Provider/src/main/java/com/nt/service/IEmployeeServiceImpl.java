@@ -12,7 +12,7 @@ private IEmployeeRepo repo;
 	@Override
 	public String saveEmployee(Employee emp) {
     
-		return "Employee saved   : "+repo.save(emp);
+		return "Employee saved   : "+repo.save(emp).getId();
 	}
 
 }
