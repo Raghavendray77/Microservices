@@ -18,7 +18,6 @@ private IEmployeeRepo repo;
 	}
 	@Override
 	public List<Employee> getallEmployess() {
-		
 		return repo.findAll();
 	}
 	
